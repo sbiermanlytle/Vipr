@@ -1,0 +1,23 @@
+{
+  "name": "vipr",
+  "version": "1.0.0",
+  "description": "WebGL API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbiermanlytle/vipr.git"
+  },
+  "keywords": [
+    "js",
+    "webgl"
+  ],
+  "author": "Sebastian Bierman-Lytle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sbiermanlytle/vipr/issues"
+  },
+  "homepage": "https://github.com/sbiermanlytle/vipr#readme"
+}
