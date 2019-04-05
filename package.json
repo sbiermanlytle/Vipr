@@ -2,8 +2,13 @@
   "name": "vipr",
   "version": "1.0.0",
   "description": "WebGL API",
-  "main": "index.js",
+  "author": "Sebastian Bierman-Lytle",
+  "main": "dist/vipr.cjs.js",
+  "module": "dist/vipr.esm.js",
+  "browser": "dist/vipr.umd.js",
   "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup \"src/vipr.js\" --format umd --name \"vipr\" --file build/vipr.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,10 +19,19 @@
     "js",
     "webgl"
   ],
-  "author": "Sebastian Bierman-Lytle",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sbiermanlytle/vipr/issues"
   },
-  "homepage": "https://github.com/sbiermanlytle/vipr#readme"
+  "homepage": "https://github.com/sbiermanlytle/vipr#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "rollup": "^1.7.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^4.0.1"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.0.0"
+  }
 }
